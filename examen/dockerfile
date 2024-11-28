@@ -1,0 +1,6 @@
+FROM openjdk:latest
+WORKDIR /app
+COPY ./src /app
+RUN javac *.java
+EXPOSE 1099
+CMD ["java", "ClienteRMI"]
